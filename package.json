@@ -1,0 +1,20 @@
+{
+	"name": "portfolio",
+	"version": "1.0.0",
+	"description": "My Portfolio",
+	"main": "index.js",
+	"scripts": {
+		"sass": "node-sass -w scss/ -o docs/css/ --recursive",
+		"deploy": "gh-pages -d dist"
+	},
+	"author": "Margarito Pineda",
+	"license": "ISC",
+	"devDependencies": {
+		"node-sass": "^4.14.1",
+		"webpack": "^4.44.2"
+	},
+	"homepage": "https://margaritopinedajr.github.io/Portfolio",
+	"dependencies": {
+		"gh-pages": "^3.1.0"
+	}
+}

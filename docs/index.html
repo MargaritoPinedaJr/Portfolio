@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script
+   src="https://kit.fontawesome.com/0065d9563d.js"
+   crossorigin="anonymous"
+  ></script>
+  <link
+   href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merienda:wght@400;700&family=Roboto:wght@500;700;900&family=Rock+Salt&family=Sriracha&family=Orbitron:wght@700&display=swap"
+   rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./css/index.css" />
+  <title>MP | Web Development</title>
+ </head>
+
+ <body>
+  <div id="header">
+   <h1 class="name">Margarito Pineda</h1>
+   <!-- For images imported from Pixelab -->
+   <!-- <div class="name">
+				<img src="./img/Margarito.png" alt="Margarito" />
+				<img src="./img/Pineda2.png" alt="Pineda" />
+			</div> -->
+   <h3>[Modern web designer and developer.]</h3>
+  </div>
+
+  <div id="about-me" class="container">
+   <h3>
+    My name is Margarito. I am a former professional aircraft mechanic who fell
+    in love with code and decided to chase his dreams. I'm on a mission to
+    change the world with my work. If you're ready to do great things together,
+    let's make it happen.
+   </h3>
+   <div id="history">
+    <i class="fas fa-plane-departure fa-2x"></i>
+    <p id="history1" class="history-item">
+     In my last career, I maintained aircraft that were not designed with ease
+     of maintenance in mind. That's why I understand the importance of writing
+     good code that is easy to maintain.
+    </p>
+    <div class="vertical"></div>
+    <i class="fas fa-server fa-2x"></i>
+    <p id="history2" class="history-item">
+     As a lover of learning, I immerse myself in my projects and make sure that
+     they are a reflection of my skills and abilities.
+    </p>
+    <div class="vertical"></div>
+    <i class="far fa-comment fa-2x"></i>
+    <p id="history3" class="history-item">
+     Having been multilingual all my life, I am used to learning and
+     communicating in different ways, whether virtually and in person. I'm also
+     fluent in Spanish.
+    </p>
+   </div>
+  </div>
+
+  <div id="clickables">
+   <div id="abilities-container" class="container inactive-container">
+    <i id="abilities-button" class="fas fa-angle-double-down button"></i>
+    <div id="abilities-drop-down" class="drop-down">
+     <p>[Development]<br /><br />JavaScript<br />CSS & Sass<br />HTML</p>
+     <div class="vertical small"></div>
+     <p>[Design]<br /><br />Photoshop<br />Pixelab</p>
+     <div class="vertical small"></div>
+     <p>[Maintenance]<br /><br />git<br />NPM<br />Yarn</p>
+    </div>
+    <h3>[Abilities]</h3>
+   </div>
+   <div id="projects-container" class="container inactive-container">
+    <i id="projects-button" class="fas fa-angle-double-down button"></i>
+    <div id="projects-drop-down" class="drop-down">
+     <p>All my projects listed here</p>
+     <p>All my projects listed here</p>
+     <p>All my projects listed here</p>
+     <p>All my projects listed here</p>
+    </div>
+    <h3>[Projects]</h3>
+   </div>
+   <div id="reach-me-container" class="container">
+    <i id="reach-me-button" class="fas fa-angle-double-down button"></i>
+    <div
+     id="reach-me-drop-down"
+     class="drop-down"
+     method="post"
+     action="contact.php"
+    >
+     <input
+      type="text"
+      class="text-input name-input"
+      placeholder="Name"
+      name="Name"
+     />
+     <input
+      type="text"
+      class="text-input subject-input"
+      placeholder="Subject"
+      name="Subject"
+     />
+     <input
+      type="text"
+      class="text-input email-input"
+      placeholder="Email Address"
+      name="email"
+     />
+     <input
+      type="text"
+      class="text-input phone-input"
+      placeholder="Phone Number"
+      name="phone"
+     />
+     <textarea
+      class="text-input message-input"
+      placeholder="Enter Message"
+      name="message"
+     ></textarea>
+     <div>
+      <button type="submit" id="submit-button">Submit</button>
+     </div>
+    </div>
+    <h3>[Reach Me]</h3>
+   </div>
+  </div>
+
+  <footer>
+   <div>
+    <p>Created by Margarito Pineda &copy 2020 All rights reserved.</p>
+   </div>
+   <div class="icons">
+    <i class="fab fa-github fa-2x"></i>
+    <i class="fab fa-linkedin-in fa-2x"></i>
+   </div>
+  </footer>
+  <script src="./index.js"></script>
+ </body>
+</html>

@@ -1,0 +1,244 @@
+* {
+ margin: 0;
+ padding: 0;
+ font-family: "Roboto", sans-serif;
+ font-weight: 500;
+ text-align: center;
+ // min-height: 100%;
+}
+
+// Utilites
+
+$website-width: 1280px;
+$main-color: #bfebee;
+$dark-color: #3b4350;
+$medium-color: #6c7787;
+$light-color: #e6eaf0;
+$bg-image: url("../img/Gray double 2.jpg");
+$main-shadow: $main-color 0.1rem 0.1rem 0.8rem,
+ $main-color -0.1rem -0.1rem 0.8rem;
+$dark-shadow: $dark-color 0.1rem 0.1rem 0.8rem,
+ $dark-color -0.1rem -0.1rem 0.8rem, $main-color 0.1rem 0.1rem 0.2rem,
+ $main-color -0.1rem -0.1rem 0.5rem;
+
+.container {
+ max-width: 66vw;
+ margin: auto;
+ // border: 0.2rem solid $dark-color;
+ overflow: auto;
+ border-radius: 0.5rem;
+ background-color: #f4f4f4;
+ //  box-shadow: $main-shadow;
+ margin-bottom: 1rem;
+ h2 {
+  padding: 1rem 1rem;
+ }
+ h3 {
+  padding: 0.5rem 1rem;
+ }
+}
+
+.fas,
+.far {
+ margin: 1rem;
+ color: $light-color;
+}
+
+.vertical {
+ width: 1rem;
+ height: 8rem;
+ background: $light-color;
+ display: block;
+ margin: 1rem 1rem;
+ border-radius: 20%;
+ &.small {
+  height: 3rem;
+  width: 0.2rem;
+ }
+}
+
+// Main Styles
+
+body {
+ background: $bg-image repeat-y center center / cover;
+ align-content: space-between;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ // min-height: 100%;
+}
+
+#header {
+ text-align: center;
+ padding: 3rem 0 2rem 0;
+ .name {
+  color: #f4f4f4;
+  // outline: 0.2rem solid $main-color;
+  // box-shadow: $main-shadow;
+  font-weight: 1000;
+  font-family: "Orbitron", sans-serif;
+  font-size: 4rem;
+  text-shadow: $dark-shadow;
+  margin-bottom: 1rem;
+ }
+
+ // For images imported from Pixelab.
+ // .name {
+ // 	display: flex;
+ // 	width: 1px;
+ // 	margin-bottom: 1rem;
+ // }
+}
+
+#about-me {
+ border: 0.1rem solid black;
+ box-shadow: $dark-shadow;
+
+ #history {
+  background-color: $dark-color;
+  color: $light-color;
+  display: flex;
+  align-items: center;
+  // flex-direction: row;
+
+  p {
+   text-align: left;
+   padding: 0.5rem 0.5rem;
+   // font-weight: 500;
+  }
+
+  // .history-item {
+  // 	padding: 5rem, 5rem;
+  // 	margin: 5rem, 5rem;
+  // 	color: #f1f1f1;
+  // }
+ }
+}
+
+#clickables {
+ .active-container {
+  box-shadow: $dark-shadow;
+  transform: scale(1.1);
+  transition: all 0.4s;
+  margin-top: 1rem;
+ }
+
+ .container {
+  max-width: 60vw;
+  //   box-shadow: $dark-shadow;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  color: $dark-color;
+  align-items: center;
+
+  .drop-down {
+   display: none;
+   padding: 0.5rem 1rem 1rem;
+  }
+  .active-list {
+   display: flex;
+   color: $dark-color;
+   justify-content: center;
+  }
+
+  i {
+   margin-top: 0;
+   color: black;
+   width: 1.5rem;
+   padding: 0.2rem 0.5rem;
+   border-radius: 0.5rem;
+   &:hover {
+    color: $main-color;
+    // padding:  0.2rem;
+    background: $dark-color;
+    // border: 0.2rem solid $dark-color;
+    // border-radius: 100%;
+    box-shadow: $main-shadow;
+    // box-shadow: inset $dark-shadow;
+    // transform: scale(1.5);
+    transition: all 0.3s;
+    cursor: pointer;
+    // margin: 0.3rem 0 0 0;
+    // padding-bottom: 0.4rem;
+   }
+  }
+  .active-button {
+   transform: rotate(180deg);
+   transition: all 0.3s;
+
+   &:hover {
+    transform: rotate(180deg) scale(1.5);
+    transition: all 0.3s;
+   }
+  }
+ }
+
+ #projects-drop-down {
+  flex-direction: column;
+ }
+ #reach-me-drop-down {
+  flex-direction: column;
+  overflow-x: auto;
+  .text-input {
+   line-height: 2.5rem;
+   border: 0.1rem solid $light-color;
+   border-radius: 0.5rem;
+   margin: 0.5rem;
+
+   &:focus {
+    border: 0.1rem solid black;
+    box-shadow: $main-shadow;
+   }
+  }
+  .message-input {
+   width: 45vw;
+   max-width: 45vw;
+   min-height: 2.5rem;
+   min-width: 45vw;
+  }
+  #submit-button {
+   line-height: 1.5rem;
+   border: 0.1rem solid $light-color;
+   border-radius: 0.5rem;
+   background-color: white;
+   padding: 0.2rem 0.7rem;
+   &:hover {
+    color: $main-color;
+    background: $main-color;
+    color: $dark-color;
+    cursor: pointer;
+   }
+  }
+ }
+}
+
+footer {
+ color: $medium-color;
+ clear: both;
+ height: 1rem;
+
+ div {
+  margin: 0.5rem 0.5rem;
+  padding: 0 0 0.5rem 0;
+  .icons {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   flex-direction: row;
+  }
+  i {
+   &:hover {
+    color: $main-color;
+    background: $dark-color;
+    border: solid $dark-color;
+    border-radius: 100%;
+    box-shadow: $main-shadow;
+    // box-shadow: inset $dark-shadow;
+    transform: scale(1.5);
+    transition: all 0.3s;
+    cursor: pointer;
+   }
+  }
+ }
+}
