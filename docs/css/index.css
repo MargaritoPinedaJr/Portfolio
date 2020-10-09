@@ -188,8 +188,6 @@ body {
     align-content: center; }
     #clickables #reach-me-drop-down div #myfile #recap {
       min-height: 2.5rem;
-      left: 40%;
-      right: 40%;
       max-width: 170px;
       justify-content: center;
       align-content: center; }
