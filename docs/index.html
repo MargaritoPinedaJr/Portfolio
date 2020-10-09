@@ -29,7 +29,7 @@
 
 		<div id="about-me" class="container">
 			<h3>
-				My name is Margarito. I am a former professional aircraft mechanic who
+				I'm Margarito. I am a former professional aircraft mechanic who
 				fell in love with code and decided to chase his dreams. I'm on a mission
 				to change the world with my work. If you're ready to do great things
 				together, let's make it happen.
@@ -62,12 +62,12 @@
 				<i id="abilities-button" class="fas fa-angle-double-down button"></i>
 				<div id="abilities-drop-down" class="drop-down">
 					<div>
-					<h2>[Development]</h2><p>JavaScript<br />CSS & Sass<br />HTML</p></div>
+					<h2>[Languages]</h2><p>JavaScript<br />CSS & Sass<br />HTML</p></div>
 					<div class="vertical small"></div>
 					<div><h2>[Design]</h2><p>Photoshop<br />Pixelab</p></div>
 					<div class="vertical small"></div>
-					<div><h2>[Maintenance]</h2>
-					<p>git<br />NPM<br />Yarn</p></div>
+					<div><h2>[Dev Tools]</h2>
+					<p>git<br />NPM<br />Netlify<br />API Integration</p></div>
 				</div>
 				<h3>[Abilities]</h3>
 			</div>
@@ -106,38 +106,47 @@
 				<form
 					id="reach-me-drop-down"
 					class="drop-down"
-					method="post"
-					action="contact.php"
+					action="POST"
+					data-netlify="true"
 				>
 					<input
 						type="text"
-						class="text-input name-input"
+						class="text-input"
 						placeholder="Name"
 						name="Name"
 					/>
 					<input
 						type="text"
-						class="text-input subject-input"
+						class="text-input"
 						placeholder="Subject"
 						name="Subject"
 					/>
 					<input
-						type="text"
-						class="text-input email-input"
+						type="email"
+						class="text-input"
 						placeholder="Email Address"
 						name="email"
 					/>
-					<input
+					<!-- <input
 						type="text"
 						class="text-input phone-input"
 						placeholder="Phone Number"
 						name="phone"
-					/>
+					/> -->
 					<textarea
 						class="text-input message-input"
 						placeholder="Enter Message"
 						name="message"
 					></textarea>
+					<div>
+					<input
+					type="file"
+					id="myfile"
+						name="myfile"
+						placeholder="Upload File"
+					></input>
+				</div>
+					<div data-netlify-recaptcha="true"></div>
 					<div>
 						<button type="submit" id="submit-button">Submit</button>
 					</div>

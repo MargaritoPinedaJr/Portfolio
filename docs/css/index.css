@@ -182,6 +182,11 @@ body {
     max-width: 45vw;
     min-height: 2.5rem;
     min-width: 45vw; }
+  #clickables #reach-me-drop-down #myfile {
+    min-height: 2.5rem;
+    left: 40%;
+    right: 40%;
+    max-width: 170px; }
   #clickables #reach-me-drop-down #submit-button {
     line-height: 1.5rem;
     border: 0.1rem solid #e6eaf0;
