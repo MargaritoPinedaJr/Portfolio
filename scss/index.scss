@@ -81,12 +81,12 @@ a:visited {
 // Main Styles
 
 body {
-	background: $bg-image repeat-y center center / cover;
+	position: relative;
+	background: $bg-image center top;
 	align-content: space-between;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	// min-height: 100%;
 }
 
 #header {
@@ -94,21 +94,13 @@ body {
 	padding: 3rem 0 2rem 0;
 	.name {
 		color: #f4f4f4;
-		// outline: 0.2rem solid $main-color;
-		// box-shadow: $main-shadow;
+
 		font-weight: 1000;
 		font-family: 'Orbitron', sans-serif;
 		font-size: 4rem;
 		text-shadow: $dark-shadow;
 		margin-bottom: 1rem;
 	}
-
-	// For images imported from Pixelab.
-	// .name {
-	// 	display: flex;
-	// 	width: 1px;
-	// 	margin-bottom: 1rem;
-	// }
 }
 
 #about-me {
@@ -120,19 +112,11 @@ body {
 		color: $light-color;
 		display: flex;
 		align-items: center;
-		// flex-direction: row;
 
 		p {
 			text-align: left;
 			padding: 0.5rem 0.5rem;
-			// font-weight: 500;
 		}
-
-		// .history-item {
-		// 	padding: 5rem, 5rem;
-		// 	margin: 5rem, 5rem;
-		// 	color: #f1f1f1;
-		// }
 	}
 }
 
@@ -146,7 +130,6 @@ body {
 
 	.container {
 		max-width: 60vw;
-		//   box-shadow: $dark-shadow;
 		overflow: hidden;
 		display: flex;
 		flex-direction: column-reverse;
@@ -169,20 +152,14 @@ body {
 			width: 1.5rem;
 			padding: 0.2rem 0.5rem;
 			border-radius: 0.5rem;
-			color: $medium-color !important;
 			&:hover {
-				color: $main-color !important;
-				// padding:  0.2rem;
+				color: $main-color;
 				background: $dark-color;
-				// border: 0.2rem solid $dark-color;
-				// border-radius: 100%;
 				box-shadow: $main-shadow;
-				// box-shadow: inset $dark-shadow;
-				// transform: scale(1.5);
 				transition: all 0.3s;
 				cursor: pointer;
-				// margin: 0.3rem 0 0 0;
-				// padding-bottom: 0.4rem;
+				transform: scale(1.5);
+				transition: all 0.3s;
 			}
 		}
 		.active-button {
@@ -219,12 +196,12 @@ body {
 
 			i {
 				margin-top: 0.4rem;
-				color: black;
 				width: 1.5rem;
-				padding: 0 0.5rem 0 0.2rem;
+				padding: 0 0.5rem 0.1rem 0.1rem;
 				border-radius: 0;
+				color: $medium-color;
 				&:hover {
-					all: 0;
+					// all: 0;
 					color: $main-color;
 					background: $dark-color;
 					border: solid $dark-color;
@@ -232,9 +209,6 @@ body {
 					box-shadow: $main-shadow;
 					box-shadow: inset $dark-shadow;
 					margin-top: 1rem;
-					transform: scale(1.5);
-					transition: all 0.3s;
-					cursor: pointer;
 				}
 			}
 		}
@@ -277,7 +251,6 @@ body {
 
 footer {
 	color: $medium-color;
-	// clear: both;
 	height: 1rem;
 
 	div {

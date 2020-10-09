@@ -52,7 +52,8 @@ a:visited {
   background-color: transparent; }
 
 body {
-  background: url("../img/Gray double 2.jpg") repeat-y center center/cover;
+  position: relative;
+  background: url("../img/Gray double 2.jpg") center top;
   align-content: space-between;
   display: flex;
   flex-direction: column;
@@ -106,14 +107,15 @@ body {
     color: black;
     width: 1.5rem;
     padding: 0.2rem 0.5rem;
-    border-radius: 0.5rem;
-    color: #6c7787 !important; }
+    border-radius: 0.5rem; }
     #clickables .container i:hover {
-      color: #bfebee !important;
+      color: #bfebee;
       background: #3b4350;
       box-shadow: #bfebee 0.1rem 0.1rem 0.8rem, #bfebee -0.1rem -0.1rem 0.8rem;
       transition: all 0.3s;
-      cursor: pointer; }
+      cursor: pointer;
+      transform: scale(1.5);
+      transition: all 0.3s; }
   #clickables .container .active-button {
     transform: rotate(180deg);
     transition: all 0.3s; }
@@ -140,22 +142,18 @@ body {
       margin: 1rem; }
     #clickables #projects-drop-down .project i {
       margin-top: 0.4rem;
-      color: black;
       width: 1.5rem;
-      padding: 0 0.5rem 0 0.2rem;
-      border-radius: 0; }
+      padding: 0 0.5rem 0.1rem 0.1rem;
+      border-radius: 0;
+      color: #6c7787; }
       #clickables #projects-drop-down .project i:hover {
-        all: 0;
         color: #bfebee;
         background: #3b4350;
         border: solid #3b4350;
         border-radius: 100%;
         box-shadow: #bfebee 0.1rem 0.1rem 0.8rem, #bfebee -0.1rem -0.1rem 0.8rem;
         box-shadow: inset #3b4350 0.1rem 0.1rem 0.8rem, #3b4350 -0.1rem -0.1rem 0.8rem, #bfebee 0.1rem 0.1rem 0.2rem, #bfebee -0.1rem -0.1rem 0.5rem;
-        margin-top: 1rem;
-        transform: scale(1.5);
-        transition: all 0.3s;
-        cursor: pointer; }
+        margin-top: 1rem; }
 
 #clickables #reach-me-drop-down {
   flex-direction: column;
