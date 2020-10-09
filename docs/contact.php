@@ -1,4 +1,6 @@
 <?php
+
+if (isset($_POST['submit'])) {
 $name = $_POST['name']:
 $subject = $_POST['subject'];
 $visitor_email = $_POST['email'];
@@ -13,9 +15,10 @@ $email_body = "User Name: $name.\n".
     "User Phone: $phone.\n".
     "User Message: $message.\n";
 
-$to = "margarito.pined.jr@gmail.com";
+$to = "margarito.pineda.jr@gmail.com";
 $headers = "From: $email_from \r\n";
 $header .= "Reply-To: $visitor_email \r\n";
 mail($to,$email_subject,$email_body,$headers);
 header("Location: index.html");
+}
 ?>
