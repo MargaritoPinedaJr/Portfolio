@@ -186,7 +186,9 @@ body {
     min-height: 2.5rem;
     left: 40%;
     right: 40%;
-    max-width: 170px; }
+    max-width: 170px;
+    justify-content: center;
+    align-content: center; }
   #clickables #reach-me-drop-down #submit-button {
     line-height: 1.5rem;
     border: 0.1rem solid #e6eaf0;
