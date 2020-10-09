@@ -5,6 +5,14 @@
   font-weight: 500;
   text-align: center; }
 
+::-webkit-scrollbar {
+  background-color: #3b4350;
+  width: 1rem; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #e6eaf0;
+  border-radius: 3rem; }
+
 .container {
   max-width: 66vw;
   margin: auto;
@@ -53,11 +61,14 @@ a:visited {
 
 body {
   position: relative;
-  background: url("../img/Gray double 2.jpg") center top;
+  background-image: url("../img/Gray double 2.jpg");
+  background-position: top;
+  background-size: 100%;
   align-content: space-between;
   display: flex;
   flex-direction: column;
-  justify-content: space-around; }
+  justify-content: space-around;
+  overflow-x: hidden; }
 
 #header {
   text-align: center;
@@ -184,8 +195,11 @@ body {
       cursor: pointer; }
 
 footer {
+  position: absolute;
+  bottom: 0;
   color: #6c7787;
-  height: 1rem; }
+  height: 1rem;
+  width: 100vw; }
   footer div {
     margin: 0.5rem 0.5rem;
     padding: 0 0 0.5rem 0; }

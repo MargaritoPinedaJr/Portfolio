@@ -4,7 +4,6 @@
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
 	text-align: center;
-	// min-height: 100%;
 }
 
 // Utilites
@@ -20,6 +19,16 @@ $main-shadow: $main-color 0.1rem 0.1rem 0.8rem,
 $dark-shadow: $dark-color 0.1rem 0.1rem 0.8rem,
 	$dark-color -0.1rem -0.1rem 0.8rem, $main-color 0.1rem 0.1rem 0.2rem,
 	$main-color -0.1rem -0.1rem 0.5rem;
+
+::-webkit-scrollbar {
+	background-color: $dark-color;
+	width: 1rem;
+}
+::-webkit-scrollbar-thumb {
+	background-color: $light-color;
+
+	border-radius: 3rem;
+}
 
 .container {
 	max-width: 66vw;
@@ -82,11 +91,14 @@ a:visited {
 
 body {
 	position: relative;
-	background: $bg-image center top;
+	background-image: $bg-image;
+	background-position: top;
+	background-size: 100%;
 	align-content: space-between;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	overflow-x: hidden;
 }
 
 #header {
@@ -250,8 +262,11 @@ body {
 }
 
 footer {
+	position: absolute;
+	bottom: 0;
 	color: $medium-color;
 	height: 1rem;
+	width: 100vw;
 
 	div {
 		margin: 0.5rem 0.5rem;
