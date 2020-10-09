@@ -183,7 +183,7 @@ body {
     min-height: 2.5rem;
     min-width: 45vw; }
   #clickables #reach-me-drop-down div {
-    margin: 1rem;
+    margin: 0.5rem;
     justify-content: center;
     align-content: center; }
     #clickables #reach-me-drop-down div #myfile #recap {
