@@ -245,17 +245,23 @@ body {
 			min-height: 2.5rem;
 			min-width: 45vw;
 		}
-		#myfile #recap {
-			min-height: 2.5rem;
-			// width: 45vw;
-			// max-width: 45vw;
-			// min-width: 45vw;
-			left: 40%;
-			right: 40%;
-			max-width: 170px;
+		div {
+			margin: 1rem;
 			justify-content: center;
 			align-content: center;
+			#myfile #recap {
+				min-height: 2.5rem;
+				// width: 45vw;
+				// max-width: 45vw;
+				// min-width: 45vw;
+				left: 40%;
+				right: 40%;
+				max-width: 170px;
+				justify-content: center;
+				align-content: center;
+			}
 		}
+
 		#submit-button {
 			line-height: 1.5rem;
 			border: 0.1rem solid $light-color;
