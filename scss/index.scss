@@ -103,7 +103,7 @@ body {
 	text-align: center;
 	padding: 3rem 0 2rem 0;
 	.name {
-		color: #f4f4f4;
+		color: $light-color;
 
 		font-weight: 1000;
 		font-family: 'Orbitron', sans-serif;
@@ -111,6 +111,11 @@ body {
 		text-shadow: $dark-shadow;
 		margin-bottom: 1rem;
 	}
+}
+
+#title {
+	color: $light-color;
+	text-shadow: $dark-shadow;
 }
 
 #about-me {
