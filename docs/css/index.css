@@ -226,3 +226,35 @@ footer {
       transform: scale(1.5);
       transition: all 0.3s;
       cursor: pointer; }
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 95vw; }
+  #clickables .active-container {
+    min-width: 95vw;
+    transition: all 0.4s;
+    margin-top: 1rem; }
+  .horizontal {
+    height: 0.5rem; }
+  #projects-drop-down .project img {
+    max-width: 100%; }
+  #reach-me-drop-down {
+    align-items: center; }
+    #reach-me-drop-down .text-input {
+      min-width: 80vw; } }
+
+@media (max-width: 620px) {
+  #about-me #history {
+    flex-direction: column;
+    padding: 1rem; }
+    #about-me #history .vertical {
+      width: 8rem;
+      height: 0.5rem; } }
+
+@media (max-width: 440px) {
+  #abilities-drop-down {
+    flex-direction: column; }
+    #abilities-drop-down .vertical {
+      width: 10rem;
+      height: 0.2rem;
+      align-self: center; } }

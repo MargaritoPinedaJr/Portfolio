@@ -33,11 +33,9 @@ $dark-shadow: $dark-color 0.1rem 0.1rem 0.8rem,
 .container {
 	max-width: 66vw;
 	margin: auto;
-	// border: 0.2rem solid $dark-color;
 	overflow: auto;
 	border-radius: 0.5rem;
 	background-color: #f4f4f4;
-	//  box-shadow: $main-shadow;
 	margin-bottom: 1rem;
 	h2 {
 		padding: 1rem 1rem;
@@ -213,7 +211,6 @@ body {
 				border-radius: 0;
 				color: $medium-color;
 				&:hover {
-					// all: 0;
 					color: $main-color;
 					background: $dark-color;
 					border: solid $dark-color;
@@ -228,6 +225,7 @@ body {
 	#reach-me-drop-down {
 		flex-direction: column;
 		overflow-x: auto;
+		// align-items: center;
 		.text-input {
 			line-height: 2.5rem;
 			border: 0.1rem solid $light-color;
@@ -251,11 +249,6 @@ body {
 			align-content: center;
 			#myfile #recap {
 				min-height: 2.5rem;
-				// width: 45vw;
-				// max-width: 45vw;
-				// min-width: 45vw;
-				// left: 40%;
-				// right: 40%;
 				max-width: 170px;
 				justify-content: center;
 				align-content: center;
@@ -306,6 +299,59 @@ footer {
 				transition: all 0.3s;
 				cursor: pointer;
 			}
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.container {
+		max-width: 95vw;
+	}
+	#clickables {
+		.active-container {
+			min-width: 95vw;
+			transition: all 0.4s;
+			margin-top: 1rem;
+		}
+	}
+	.horizontal {
+		height: 0.5rem;
+	}
+	#projects-drop-down {
+		.project {
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+	#reach-me-drop-down {
+		align-items: center;
+		.text-input {
+			min-width: 80vw;
+		}
+	}
+}
+
+@media (max-width: 620px) {
+	#about-me {
+		#history {
+			flex-direction: column;
+			padding: 1rem;
+			.vertical {
+				width: 8rem;
+				height: 0.5rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 440px) {
+	#abilities-drop-down {
+		flex-direction: column;
+		.vertical {
+			width: 10rem;
+			height: 0.2rem;
+			align-self: center;
 		}
 	}
 }
