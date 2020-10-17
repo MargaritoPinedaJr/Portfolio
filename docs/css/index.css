@@ -61,7 +61,7 @@ a:visited {
 
 body {
   position: relative;
-  background-image: url("../img/Gray double 2.jpg");
+  background-image: url("../img/light gray double.jpg");
   background-position: top;
   background-size: 100%;
   align-content: space-between;
@@ -72,7 +72,7 @@ body {
 
 #header {
   text-align: center;
-  padding: 3rem 0 2rem 0; }
+  padding: 2rem 0 2rem 0; }
   #header .name {
     color: #e6eaf0;
     font-weight: 1000;
@@ -96,6 +96,10 @@ body {
     #about-me #history p {
       text-align: left;
       padding: 0.5rem 0.5rem; }
+    #about-me #history #text-link {
+      color: #e6eaf0; }
+      #about-me #history #text-link:hover {
+        color: #bfebee; }
 
 #clickables .active-container {
   box-shadow: #3b4350 0.1rem 0.1rem 0.8rem, #3b4350 -0.1rem -0.1rem 0.8rem, #bfebee 0.1rem 0.1rem 0.2rem, #bfebee -0.1rem -0.1rem 0.5rem;
@@ -215,7 +219,9 @@ footer {
   width: 100vw; }
   footer div {
     margin: 0.5rem 0.5rem;
-    padding: 0 0 0.5rem 0; }
+    padding: 0.5rem 0 0rem 0; }
+    footer div p {
+      text-shadow: #e6eaf0 0.1rem 0.1rem 0.8rem, #e6eaf0 -0.1rem -0.1rem 0.8rem; }
     footer div .icons {
       display: flex;
       justify-content: center;

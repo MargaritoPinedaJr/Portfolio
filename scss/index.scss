@@ -13,12 +13,16 @@ $main-color: #bfebee;
 $dark-color: #3b4350;
 $medium-color: #6c7787;
 $light-color: #e6eaf0;
-$bg-image: url('../img/Gray double 2.jpg');
+$bg-image: url('../img/light gray double.jpg');
 $main-shadow: $main-color 0.1rem 0.1rem 0.8rem,
 	$main-color -0.1rem -0.1rem 0.8rem;
 $dark-shadow: $dark-color 0.1rem 0.1rem 0.8rem,
 	$dark-color -0.1rem -0.1rem 0.8rem, $main-color 0.1rem 0.1rem 0.2rem,
 	$main-color -0.1rem -0.1rem 0.5rem;
+$medium-shadow: $medium-color 0.1rem 0.1rem 0.2rem,
+	$medium-color -0.1rem -0.1rem 0.5rem;
+$light-shadow: $light-color 0.1rem 0.1rem 0.8rem,
+	$light-color -0.1rem -0.1rem 0.8rem;
 
 ::-webkit-scrollbar {
 	background-color: $dark-color;
@@ -101,7 +105,7 @@ body {
 
 #header {
 	text-align: center;
-	padding: 3rem 0 2rem 0;
+	padding: 2rem 0 2rem 0;
 	.name {
 		color: $light-color;
 
@@ -131,6 +135,12 @@ body {
 		p {
 			text-align: left;
 			padding: 0.5rem 0.5rem;
+		}
+		#text-link {
+			color: $light-color;
+			&:hover {
+				color: $main-color;
+			}
 		}
 	}
 }
@@ -282,10 +292,14 @@ footer {
 	color: $medium-color;
 	height: 1rem;
 	width: 100vw;
+	// padding: 0 0 10rem 0;
 
 	div {
 		margin: 0.5rem 0.5rem;
-		padding: 0 0 0.5rem 0;
+		padding: 0.5rem 0 0rem 0;
+		p {
+			text-shadow: $light-shadow;
+		}
 		.icons {
 			display: flex;
 			justify-content: center;
