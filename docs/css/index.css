@@ -145,6 +145,10 @@ body {
 #clickables #abilities-drop-down {
   min-width: 75%;
   justify-content: space-between; }
+  #clickables #abilities-drop-down div {
+    width: 30%; }
+  #clickables #abilities-drop-down div.vertical {
+    width: 0.2rem; }
 
 #clickables #projects-drop-down {
   flex-direction: column;
@@ -244,6 +248,12 @@ footer {
     min-width: 95vw;
     transition: all 0.4s;
     margin-top: 1rem; }
+  #clickables i:hover {
+    margin-top: 0;
+    color: black;
+    width: 1.5rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem; }
   .horizontal {
     height: 0.5rem; }
   #projects-drop-down .project img {

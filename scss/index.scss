@@ -201,6 +201,12 @@ body {
 	#abilities-drop-down {
 		min-width: 75%;
 		justify-content: space-between;
+		div {
+			width: 30%;
+		}
+		div.vertical {
+			width: 0.2rem;
+		}
 	}
 
 	#projects-drop-down {
@@ -331,6 +337,15 @@ footer {
 			min-width: 95vw;
 			transition: all 0.4s;
 			margin-top: 1rem;
+		}
+		i {
+			&:hover {
+				margin-top: 0;
+				color: black;
+				width: 1.5rem;
+				padding: 0.2rem 0.5rem;
+				border-radius: 0.5rem;
+			}
 		}
 	}
 	.horizontal {
